@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//IETF//DTD HTML//EN">
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<!--
+$Header$
+
+Copyright 2002, Keith Sheffield
+
+$Log$
+
+-->
+<title>e2tools</title>
+</head>
+
+<body>
+<h1>e2tools</h1>
+<h4>Introduction</h4>
+
+<p>E2tools is a simple set of GPL'ed utilities to read, write, and
+manipulate files in an ext2/ext3 filesystem.  These utilities access a
+filesystem directly using the ext2fs library.  I wrote these tools in order
+to copy files into a linux filesystem on a machine that does not have ext2
+support.  Of course, they can also be used on a linux machine to read/write
+to disk images or floppies without having to mount them or have root
+access.</p> 
+
+<h4>Status</h4>
+<p>The following functions have been implemented and have been tested on
+Linux, SCO OpenServer 5, and AIX 4.3 (not extensively though).</p>
+<ul>
+  <li>copy files: e2cp
+  </li><li>move files: e2mv
+  </li><li>remove files: e2rm
+  </li><li>create directory: e2mkdir
+  </li><li>create hard links: e2ln
+  </li><li>list files/directories: e2ls
+  </li><li>output the last part of a file: e2tail
+</li></ul>
+<h4>To Do</h4>
+<ul>
+  <li> Improve user documentation.  The <a href="http://home.earthlink.net/%7Ek_sheff/sw/e2tools/README">README</a> contains
+      some basic usage examples now.
+  </li><li> Improve internal code documentation
+  </li><li> Implement other functions (mknod, test, etc.)
+  </li><li> Needs htree and extended attribute support &amp; testing
+  </li><li> Automated test suite
+</li></ul>
+<p>.... some of the internal functions need to be cleaned up.</p>
+<h4>Requirements</h4>
+<ul>
+  <li><a href="http://e2fsprogs.sourceforge.net/">e2fsprogs</a>  It
+      works with version 1.26 or later.
+  </li><li>gcc - some of the e2fsprog code will not compile with some
+      proprietary compilers.
+</li></ul>
+<h4>Download</h4>
+<p>The most recent version is <a href="http://home.earthlink.net/%7Ek_sheff/sw/e2tools/e2tools-0.0.16.tar.gz">e2tools-0.0.16.tar.gz</a> for a bug fixes.
+See the <a href="http://home.earthlink.net/%7Ek_sheff/sw/e2tools/ChangeLog">ChangeLog</a> for details.</p>
+<hr>
+<address>
+This page created by <a href="mailto:sheff@pobox.com"> &lt;sheff@pobox.com&gt;</a>
+</address>
+<!-- hhmts start -->
+Last modified: Tue Apr  6 23:14:54 CDT 2004
+<!-- hhmts end -->
+ 
+</body></html>
